@@ -10,7 +10,7 @@ resource "aws_instance" "db"{
 
 
   provisioner "local-exec" {
-    command = "echo T ${self.private_ip}" > inventory.txt
+    command = "echo T ${self.private_ip} > inventory.txt "
 
   }
   provisioner "local-exec" {
