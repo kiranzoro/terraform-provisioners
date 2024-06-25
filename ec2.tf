@@ -14,7 +14,7 @@ resource "aws_instance" "db"{
 
   }
   provisioner "local-exec" {
-    command = "ansible-playbook -i inventory.txt web.yaml" 
+    command = "ansible-playbook -i inventory.txt -e ansible_user=ec2-user -e ansible_password=DevOps321 web.yaml" 
 
   }
 }
