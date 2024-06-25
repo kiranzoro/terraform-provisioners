@@ -14,7 +14,7 @@ resource "aws_instance" "db"{
 
   }
   provisioner "local-exec" {
-    command = "ansible-playbook -i inventory.txt web.yaml 
+    command = "ansible-playbook -i inventory.txt web.yaml" 
 
   }
 }
